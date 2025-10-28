@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lex Sri Lanka - Startup Law & Advisory</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic vectors -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom font import for professional look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        
+        :root {
+            --primary-color: #1e3a8a; /* Deep Blue */
+            --accent-color: #f59e0b; /* Amber/Gold */
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1f2937; /* Dark Grey */
+        }
+        
+        /* Custom styles for professional background texture or color */
+        .hero-background {
+            background-color: var(--primary-color);
+            background-image: linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(30, 58, 138, 0.7) 100%), 
+                              url('https://placehold.co/1200x800/1e3a8a/ffffff?text=Professional%20Legal%20Imagery');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Style the main Call-to-Action button */
+        .btn-primary {
+            background-color: var(--accent-color);
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .btn-primary:hover {
+            background-color: #d97706; /* Darker Amber */
+            transform: translateY(-1px);
+        }
+
+        /* Focus styles for inputs */
+        input:focus, textarea:focus, select:focus {
+            border-color: var(--accent-color) !important;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.5);
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 shadow-md bg-white">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <span class="text-3xl font-bold font-['Playfair_Display'] text-blue-900">Lex</span>
+                <span class="text-3xl font-light font-['Playfair_Display'] text-amber-500">SL</span>
+                <span class="hidden md:inline text-sm text-gray-500 ml-2">| Startup Law Advisory</span>
+            </a>
+            <div class="space-x-4 flex items-center">
+                <a href="#services" class="text-gray-600 hover:text-amber-600 transition-colors hidden md:inline">Services</a>
+                <a href="#proof-of-work" class="text-gray-600 hover:text-amber-600 transition-colors hidden md:inline">Our Work</a>
+                <a href="#contact" class="text-gray-600 hover:text-amber-600 transition-colors hidden md:inline">Contact</a>
+                <a href="#reservation" class="btn-primary text-blue-900 font-semibold px-4 py-2 rounded-lg shadow-lg text-sm transition-all duration-300">
+                    Book Consultation
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="home" class="hero-background text-white pt-20 pb-24 md:pt-32 md:pb-40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl">
+                    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 font-['Playfair_Display']">
+                        Future-Proofing <span class="text-amber-400">Sri Lankan</span> Innovation.
+                    </h1>
+                    <p class="text-xl md:text-2xl opacity-90 mb-8 font-light">
+                        Specialized legal counsel for tech startups, venture capital, and cutting-edge commercial law in Sri Lanka and globally.
+                    </p>
+                    <a href="#reservation" class="btn-primary text-blue-900 font-bold px-8 py-4 text-lg rounded-xl shadow-2xl hover:scale-105 inline-flex items-center space-x-2">
+                        <span>Start Your Legal Journey</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Core Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-blue-900">
+                    Designed for Startups. Delivered by Experts.
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service Card 1: Corporate Formation -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-amber-500">
+                        <i data-lucide="briefcase" class="text-amber-500 w-8 h-8 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Corporate & Structuring</h3>
+                        <p class="text-gray-600">Efficient business registration, shareholder agreements, and corporate governance tailored for the Sri Lankan Companies Act and global investment readiness.</p>
+                    </div>
+                    <!-- Service Card 2: Intellectual Property -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-amber-500">
+                        <i data-lucide="gem" class="text-amber-500 w-8 h-8 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Intellectual Property (IP)</h3>
+                        <p class="text-gray-600">Comprehensive protection for your innovations—trademarks, copyrights, and patents, including international filing strategies.</p>
+                    </div>
+                    <!-- Service Card 3: Funding & Contracts -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-amber-500">
+                        <i data-lucide="trending-up" class="text-amber-500 w-8 h-8 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Funding & Agreements</h3>
+                        <p class="text-gray-600">Drafting NDAs, term sheets, investment contracts (SAFE/Convertible Notes), and navigating due diligence for seed and Series A rounds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Proof of Work (Case Studies) -->
+        <section id="proof-of-work" class="py-16 md:py-24 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-4 text-blue-900">
+                    Our Impact: Proof of Work
+                </h2>
+                <p class="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Results define us. Here are brief snapshots of how we enable growth for our clients.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <!-- Case Study 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-l-8 border-blue-900">
+                        <span class="text-amber-600 text-sm font-semibold mb-2 block">Venture Funding & Negotiation</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Securing $1.2M Seed Round for Agri-Tech</h3>
+                        <p class="text-gray-700 mb-4">
+                            We advised 'GrowGreen (Pvt) Ltd', a local precision agriculture startup, on their first major seed round from Singaporean and Indian VCs. Our role involved restructuring the company, drafting a complex investment agreement, and ensuring compliance with Sri Lankan Foreign Exchange laws.
+                        </p>
+                        <div class="flex items-center space-x-4 mt-6">
+                            <i data-lucide="check-circle" class="text-green-500 w-6 h-6"></i>
+                            <span class="text-sm font-medium text-gray-500">Outcome: Successful funding, 100% IP ownership secured.</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Study 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-l-8 border-blue-900">
+                        <span class="text-amber-600 text-sm font-semibold mb-2 block">International IP Protection</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Global Trademark Portfolio for SaaS Platform</h3>
+                        <p class="text-gray-700 mb-4">
+                            We managed the global expansion of 'CodeFlow', a B2B SaaS company. This included filing and defending trademark applications across 10 jurisdictions (including US, EU, and India) and drafting international licensing agreements for their proprietary software.
+                        </p>
+                        <div class="flex items-center space-x-4 mt-6">
+                            <i data-lucide="check-circle" class="text-green-500 w-6 h-6"></i>
+                            <span class="text-sm font-medium text-gray-500">Outcome: Zero infringement cases, secure market entry.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Reservation/Consultation Form -->
+        <section id="reservation" class="py-16 md:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-blue-900 text-white p-8 md:p-12 rounded-2xl shadow-3xl">
+                    <h2 class="text-4xl font-extrabold text-amber-500 mb-3">Book Your Initial Consultation</h2>
+                    <p class="text-lg opacity-90 mb-8">
+                        Let's discuss your legal strategy. Please fill out the form below to request a time slot. We will confirm within 1 business day.
+                    </p>
+
+                    <form id="reservationForm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <!-- Full Name -->
+                            <div>
+                                <label for="fullName" class="block text-sm font-medium mb-2">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" required 
+                                    class="w-full px-4 py-3 rounded-lg text-gray-800 border-gray-300 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200">
+                            </div>
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required 
+                                    class="w-full px-4 py-3 rounded-lg text-gray-800 border-gray-300 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <!-- Phone -->
+                            <div>
+                                <label for="phone" class="block text-sm font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" 
+                                    class="w-full px-4 py-3 rounded-lg text-gray-800 border-gray-300 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200">
+                            </div>
+                            <!-- Preferred Date -->
+                            <div>
+                                <label for="date" class="block text-sm font-medium mb-2">Preferred Date</label>
+                                <input type="date" id="date" name="date" required 
+                                    class="w-full px-4 py-3 rounded-lg text-gray-800 border-gray-300 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200">
+                            </div>
+                        </div>
+                        
+                        <!-- Legal Area of Interest -->
+                        <div class="mb-6">
+                            <label for="interest" class="block text-sm font-medium mb-2">Area of Interest</label>
+                            <select id="interest" name="interest" required 
+                                class="w-full px-4 py-3 rounded-lg text-gray-800 border-gray-300 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200">
+                                <option value="" disabled selected>Select a service area</option>
+                                <option value="Corporate Structuring">Corporate Structuring / Formation</option>
+                                <option value="Intellectual Property">Intellectual Property (IP)</option>
+                                <option value="Funding/Investment">Funding & Investment Agreements</option>
+                                <option value="Contracts">General Commercial Contracts</option>
+                                <option value="Other">Other / General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="mb-8">
+                            <label for="details" class="block text-sm font-medium mb-2">Briefly Describe Your Requirement</label>
+                            <textarea id="details" name="details" rows="4" required
+                                class="w-full px-4 py-3 rounded-lg text-gray-800 border-gray-300 focus:ring-amber-500 focus:border-amber-500 transition-all duration-200" placeholder="e.g., We need to draft an NDA and incorporate our new software company."></textarea>
+                        </div>
+                        
+                        <button type="submit" id="submitButton" class="w-full btn-primary text-blue-900 font-bold px-6 py-4 rounded-xl text-lg shadow-lg hover:shadow-2xl flex items-center justify-center space-x-2">
+                            <span id="buttonText">Request Appointment</span>
+                            <div id="loadingSpinner" class="hidden w-5 h-5 border-2 border-t-2 border-blue-900 border-t-transparent rounded-full animate-spin"></div>
+                        </button>
+                        <p id="submissionMessage" class="mt-4 text-center hidden"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Firm Details & Footer -->
+        <footer id="contact" class="bg-gray-800 text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Brand -->
+                    <div>
+                        <a href="#" class="flex items-center space-x-2 mb-4">
+                            <span class="text-3xl font-bold font-['Playfair_Display'] text-white">Lex</span>
+                            <span class="text-3xl font-light font-['Playfair_Display'] text-amber-500">SL</span>
+                        </a>
+                        <p class="text-gray-400 text-sm">
+                            Pioneering legal services for the Sri Lankan startup ecosystem.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-amber-500">Quick Links</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#services" class="hover:text-amber-300 transition-colors">Services Overview</a></li>
+                            <li><a href="#proof-of-work" class="hover:text-amber-300 transition-colors">Case Studies</a></li>
+                            <li><a href="#reservation" class="hover:text-amber-300 transition-colors">Book a Meeting</a></li>
+                            <li><a href="#" class="hover:text-amber-300 transition-colors">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-amber-500">Contact</h4>
+                        <address class="space-y-2 text-gray-400 not-italic">
+                            <p class="flex items-center space-x-2"><i data-lucide="map-pin" class="w-4 h-4"></i><span>05, Temple Lane, Colombo 03, LK</span></p>
+                            <p class="flex items-center space-x-2"><i data-lucide="mail" class="w-4 h-4"></i><a href="mailto:contact@lexsl.com" class="hover:text-amber-300">contact@lexsl.com</a></p>
+                            <p class="flex items-center space-x-2"><i data-lucide="phone" class="w-4 h-4"></i><a href="tel:+94112345678" class="hover:text-amber-300">+94 11 234 5678</a></p>
+                        </address>
+                    </div>
+
+                    <!-- User Info for Debug/Collaboration -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-amber-500">App Status</h4>
+                        <p id="userIdDisplay" class="text-xs break-all text-gray-400">User ID: Loading...</p>
+                        <p id="authStatus" class="text-xs mt-2 text-gray-400">Auth Status: Connecting...</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+                    <p class="text-gray-500 text-sm">&copy; 2025 Lex SL. All rights reserved. Built for the modern legal professional.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Success Modal/Message Box (Replaces alert()) -->
+    <div id="successModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 hidden flex items-center justify-center z-[100]">
+        <div class="bg-white p-8 rounded-xl shadow-2xl max-w-sm w-full transform transition-all duration-300 scale-95 opacity-0" id="modalContent">
+            <div class="text-center">
+                <i data-lucide="calendar-check" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Appointment Requested!</h3>
+                <p class="text-gray-700 mb-6">
+                    Thank you for your request. A member of our team will contact you via email shortly to confirm the details and schedule.
+                </p>
+                <button onclick="document.getElementById('successModal').classList.add('hidden'); document.getElementById('modalContent').classList.remove('scale-100', 'opacity-100');" 
+                        class="bg-blue-900 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK Imports -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, setDoc, collection, getDocs, query } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        import { setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+
+        // Set Firebase logging level to Debug
+        setLogLevel('debug');
+
+        // --- GLOBAL VARIABLES & INITIALIZATION ---
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'sri-lanka-law-app';
+        let firebaseConfig = {};
+        try {
+            firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
+        } catch (e) {
+            console.error("Failed to parse Firebase config:", e);
+        }
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+        let app, db, auth, userId = null;
+
+        // Function to safely initialize Firebase
+        const initFirebase = async () => {
+            try {
+                if (Object.keys(firebaseConfig).length === 0) {
+                    console.error("Firebase config is empty. Cannot initialize services.");
+                    document.getElementById('authStatus').textContent = 'Auth Status: Config Error';
+                    return;
+                }
+                
+                app = initializeApp(firebaseConfig);
+                db = getFirestore(app);
+                auth = getAuth(app);
+                
+                // 1. Authentication
+                if (initialAuthToken) {
+                    await signInWithCustomToken(auth, initialAuthToken);
+                } else {
+                    await signInAnonymously(auth);
+                }
+
+                // 2. Auth State Listener
+                onAuthStateChanged(auth, (user) => {
+                    if (user) {
+                        userId = user.uid;
+                        document.getElementById('userIdDisplay').textContent = `User ID: ${userId}`;
+                        document.getElementById('authStatus').textContent = 'Auth Status: Authenticated';
+                        console.log("Firebase initialized and authenticated. User ID:", userId);
+                        
+                        // After auth, load icons once
+                        lucide.createIcons();
+                        
+                    } else {
+                        userId = crypto.randomUUID(); // Use a random ID if anonymous sign-in failed
+                        document.getElementById('userIdDisplay').textContent = `User ID: ${userId} (Anon/Fallback)`;
+                        document.getElementById('authStatus').textContent = 'Auth Status: Anonymous/Fallback';
+                        console.warn("User not authenticated, using anonymous/fallback ID.");
+                    }
+                });
+
+            } catch (error) {
+                console.error("Error during Firebase initialization or authentication:", error);
+                document.getElementById('authStatus').textContent = `Auth Status: Failed (${error.code})`;
+            }
+        };
+
+        // --- RESERVATION SUBMISSION LOGIC ---
+        const reservationForm = document.getElementById('reservationForm');
+        const submitButton = document.getElementById('submitButton');
+        const buttonText = document.getElementById('buttonText');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+        const submissionMessage = document.getElementById('submissionMessage');
+
+        reservationForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            if (!db || !userId) {
+                submissionMessage.textContent = 'Error: Firebase not initialized. Please refresh and try again.';
+                submissionMessage.classList.remove('hidden', 'text-green-500');
+                submissionMessage.classList.add('text-red-500');
+                return;
+            }
+
+            // Show loading state
+            buttonText.textContent = 'Submitting...';
+            loadingSpinner.classList.remove('hidden');
+            submitButton.disabled = true;
+            submissionMessage.classList.add('hidden');
+
+            const formData = new FormData(reservationForm);
+            const reservationData = {
+                fullName: formData.get('fullName'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                preferredDate: formData.get('date'),
+                areaOfInterest: formData.get('interest'),
+                details: formData.get('details'),
+                timestamp: new Date().toISOString(),
+                clientUserId: userId // Store the user ID for tracking
+            };
+
+            // Define the public collection path for reservations
+            const collectionPath = `artifacts/${appId}/public/data/reservations`;
+            const reservationRef = doc(collection(db, collectionPath));
+            
+            try {
+                // Save reservation to Firestore
+                await setDoc(reservationRef, reservationData);
+
+                // Success
+                reservationForm.reset();
+                submissionMessage.textContent = 'Request submitted successfully! We will contact you soon.';
+                submissionMessage.classList.remove('hidden', 'text-red-500');
+                submissionMessage.classList.add('text-green-300');
+                
+                // Show custom success modal
+                const modal = document.getElementById('successModal');
+                const modalContent = document.getElementById('modalContent');
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    modalContent.classList.add('scale-100', 'opacity-100');
+                    modalContent.classList.remove('scale-95', 'opacity-0');
+                }, 10); // Small delay for transition effect
+
+            } catch (error) {
+                console.error("Error adding reservation to Firestore: ", error);
+                submissionMessage.textContent = `Submission failed. Please check console for details. (${error.message})`;
+                submissionMessage.classList.remove('hidden', 'text-green-500');
+                submissionMessage.classList.add('text-red-500');
+            } finally {
+                // Restore button state
+                buttonText.textContent = 'Request Appointment';
+                loadingSpinner.classList.add('hidden');
+                submitButton.disabled = false;
+            }
+        });
+
+        // Initialize on window load
+        window.onload = initFirebase;
+    </script>
+</body>
+</html>
